@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
 	res.send('Running');
+	res.send("commit")
 });
 
 io.on("connection", (socket) => {
